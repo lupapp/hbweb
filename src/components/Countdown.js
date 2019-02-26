@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 
 export default class Countdown extends Component{
+    constructor(){
+        super();
+        this.state={
+            time:'',
+            seconds:'',
+            minutes:'',
+            hours:'',
+            days:''
+        };
+    }
     
     getRemaintime = deadline =>{
         let now = new Date(),
@@ -8,8 +18,7 @@ export default class Countdown extends Component{
         seconds = ('0' + Math.floor(time % 60)).slice(-2),
         minutes = ('0' + Math.floor(time / 60 % 60)).slice(-2),
         hours = ('0' + Math.floor(time / 3600 % 24)).slice(-2),
-        days = ('0' + Math.floor(time / (3600*24)));
-        console.log(Date());
+        days = ( Math.floor(time / (3600*24)));
         return{
             time,
             seconds,
@@ -18,42 +27,43 @@ export default class Countdown extends Component{
             days
         }
     }
-    countDown =(deadline, final) =>{
-        
-
-        const timerUpdate= setInterval( () =>{
-            let t = this.getRemaintime(deadline);
-            const getDays =()=>{
-                return {__html: t.days};
-            }    
-            if(t.time<=1){
-                clearInterval(timerUpdate);
-            }
-        }, 1000)
-        
-    }
     
+   
     render(){
+        setInterval(()=>{
+            let t = this.getRemaintime('Fri Mar 14 2019 24:00:00 GMT-0500');
+            this.setState({
+                time:t.time,
+                seconds:t.seconds,
+                minutes:t.minutes,
+                hours:t.hours,
+                days:t.days
+            });
+            if(t.time<=1){
+                clearInterval();
+            }
+           
+        }, 1000)
         return(
             
-            <div onLoad={this.countDown('Mon Feb 25 2020 22:35:53 GMT-0500', 'Actualización de ley de financiamento ya empezó')}  class="countdown flex align-items-center" id="countdown">
-                <div class="countdown-holder flex align-items-baseline">
-                    <span class="dday"  dangerouslySetInnerHTML={getDays()}/>
+            <div  className="countdown flex align-items-center" id="countdown">
+                <div className="countdown-holder flex align-items-baseline">
+                    <span className="dday">{this.state.days}</span>
                     <label>Days</label>
                 </div>
 
-                <div class="countdown-holder flex align-items-baseline">
-                    <span class="dhour" id="dhour"></span>
+                <div className="countdown-holder flex align-items-baseline">
+                    <span className="dhour" id="dhour">{this.state.hours}</span>
                     <label>Hours</label>
                 </div>
 
-                <div class="countdown-holder flex align-items-baseline">
-                    <span class="dmin" id="dmin"></span>
+                <div className="countdown-holder flex align-items-baseline">
+                    <span className="dmin" id="dmin">{this.state.minutes}</span>
                     <label>Minutes</label>
                 </div>
 
-                <div class="countdown-holder flex align-items-baseline">
-                    <span class="dsec" id="dsec"></span>
+                <div className="countdown-holder flex align-items-baseline">
+                    <span className="dsec" id="dsec">{this.state.seconds}</span>
                     <label>Seconds</label>
                 </div>
             </div>

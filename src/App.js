@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import './assets/style.css';
-import logo from './assets/images/logo.png'
+import logo from './assets/images/logo.jpg'
 import Countdown from './components/Countdown';
+import HomePageContenido from './components/HomePageContenido';
+import SimpleSlider from './components/Slider';
+import Styled from 'styled-components';
 const year =document.write(new Date().getFullYear());
+const AppWrapper =Styled.div`
+    display:flex;
+    justify-center:center;
+`;
 class App extends Component {
   render() {
     return (
@@ -72,6 +79,11 @@ class App extends Component {
             </div>
           </div>  
         </header>
+        <AppWrapper>
+            <SimpleSlider/>
+        </AppWrapper>
+        
+        <HomePageContenido></HomePageContenido>
         <footer className="site-footer">
             <div className="container">
                 <div className="row">
