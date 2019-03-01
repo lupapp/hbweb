@@ -308,7 +308,12 @@ a:hover, a:active {
     padding: 16px 46px;
     border: 2px solid #fff;
 }
-
+.slick-prev, .slick-next{
+    z-index: 1000;
+}
+.slick-prev:before, .slick-next:before{
+    color:#17407f !important;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -317,8 +322,7 @@ a:hover, a:active {
 }*/
 
 .hero-content {
-    padding-top: 150px;
-    padding-bottom: 120px;
+    padding-top:50px;
 }
 
 .hero-content .container,
@@ -338,6 +342,16 @@ a:hover, a:active {
     font-weight: bold;
     color: #17407F ;
     line-height: 26px;
+    padding:15px;
+}
+.title-1{
+    font-size: 40px;
+    color: #1A4991;
+    font-weight: bold;
+}
+.title-3{
+    font-size:32px;
+    color:#2E3F52;
 }
 .shadow-text{
     text-shadow: 2px 2px 2px rgba(0,0,0,0.75);
@@ -477,7 +491,7 @@ a:hover, a:active {
     }*/
 
     .hero-content {
-        padding-top: 300px;
+        padding-top: 0px;
     }
 
     .hero-slider .entry-title {
@@ -496,7 +510,7 @@ a:hover, a:active {
 
 @media screen and (min-width: 1200px){
     .hero-content {
-        padding-top: 400px;
+        padding-top: 50px;
     }
 
     .swiper-button-next {
@@ -552,14 +566,14 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .homepage-featured-events {
     height: auto;
-    padding: 110px 0 150px;
+    padding: 80px 0 150px;
     background: url("images/featured-events-bg.jpg") no-repeat center;
     background-size: cover !important;
 }
 
 .homepage-featured-events .event-content-wrap {
     position: relative;
-    padding: 36px 18px;
+    padding: 36px 0px;
 }
 
 .homepage-featured-events .event-content-wrap figure {
@@ -713,19 +727,20 @@ a:hover, a:active {
     }
 
     .homepage-featured-events .positioning-event-1 {
-        width: 350px;
+        width: 300px;
     }
 
     .homepage-featured-events .positioning-event-2 {
-        width: 255px;
-        top: 230px;
-        left: 380px;
+        width: 355px;
+        top: 180px;
+        left: 330px;
     }
 
     .homepage-featured-events .positioning-event-3 {
-        width: 255px;
+        width: 365px;
         top: 90px;
-        left: 665px;
+        left: 715px;
+        height: 380px;
     }
 
     .homepage-featured-events .positioning-event-4 {
@@ -748,32 +763,35 @@ a:hover, a:active {
 
     .homepage-featured-events .positioning-event-7 {
         width: 255px;
-        top: 546px;
-        left: 190px;
+        top: 356px;
+        left: 50px;
+        height:570px;
     }
 
     .homepage-featured-events .positioning-event-8 {
-        width: 350px;
-        top: 546px;
-        left: 475px;
+        width: 250px;
+        top: 640px;
+        left: 340px;
     }
 
     .homepage-featured-events .positioning-event-9 {
-        width: 255px;
-        top: 470px;
-        left: 855px;
+        width: 300px;
+        top: 430px;
+        left: 720px;
+        height: 300px;
     }
 
     .homepage-featured-events .positioning-event-10 {
-        width: 160px;
-        top: 776px;
-        left: 855px;
+        width: 350px;
+        top: 680px;
+        left: 620px;
+        height: 220px;
     }
 
     .homepage-featured-events .positioning-event-11 {
         width: 160px;
-        top: 963px;
-        left: 475px;
+        top: 933px;
+        left: 455px;
     }
 }
 
@@ -999,11 +1017,49 @@ a:hover, a:active {
     visibility: visible;
     opacity: 1;
 }
-.seccionInicia{
-    background: url('images/header-bg.jpg') no-repeat
-}
+
 .header-bg{
-    background: url('images/header-bg.jpg') no-repeat
+    background: url('images/header-bg.jpg') no-repeat;
+    background-size:cover;
+}
+.figuraHeader{
+    margin-top:-40px;
+}
+.figuraHeader img{
+    width:700px;
+}
+.title-curso{
+    color:#fff;
+    margin-top:-120px;
+    font-weight: bold;
+    line-height:36px;
+    font-size:30px;
+}
+.title-secciones{
+    color:#fff;
+    font-size:72px;
+    line-height:36px;
+}
+.title-contenido{
+    position:absolute;
+    display: inline-block;
+    padding: 12px 18px;
+    left:0;
+    top:0;
+    margin: 0;
+    width:100%;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1A4991;
+    
+}
+.imghvr-shutter-out-diag-2:hover > .title-contenido, .imghvr-shutter-out-diag-2.hover > .title-contenido{
+    filter: blur(30px);
+    transform: scale(1.2);
+    opacity: 0;
+    
 }
 .events-partners {
     padding: 120px 0;
@@ -2203,3 +2259,161 @@ ul.tabs-nav .tab-nav.active {
 .back-to-top path {
     fill: #fff;
 }
+/****formulario deinscripcion****/
+.cont {
+    position: relative;
+    top: 50px;
+    display: block;
+    margin-bottom: 80px;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+   input{
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+   } 
+  input::placeholder {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  input:hover, input:focus, input:active:focus {
+    color:rgb(64, 176, 218);
+    outline: none;
+    border-bottom: 1px solid rgb(64, 176, 218);
+  }
+  input:hover::placeholder, input:focus::placeholder, input:active:focus::placeholder {
+    color:rgb(64, 176, 218);
+    position: relative;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  .inputCheboxin{
+    display: block;
+    height: 50px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    float:left;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #858585;
+    font-weight: lighter;
+  }
+  .labelCheckbox{
+    padding: 15px;
+    float: left;
+    height: 15px;
+  }
+  .inputFormin {
+    display: block;
+    height: 50px;
+    width:90%;
+    margin: 0 auto;
+    border: none;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #858585;
+    font-weight: lighter;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 27px 28%;
+    text-transform: uppercase;
+    color: #858585;
+    font-weight: lighter;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  button {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin-top: -10px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-transition: .5s;
+    transition: .5s;
+    cursor:pointer;
+  }
+  button:nth-of-type(1) {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(23, 71, 148,1)), color-stop(100%, rgba(123, 191, 215,1)));
+    background: -webkit-linear-gradient(180deg, rgb(64, 176, 218) 0%, rgba(23, 71, 148,1) 100%);
+    background: -webkit-linear-gradient(right, rgba(64, 176, 218,1) 0%, rgba(23, 71, 148,1) 100%);
+    background: linear-gradient(270deg, rgba(64, 176, 218,1) 0%, rgba(23, 71, 148,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#581479', endColorstr='#ab00e5',GradientType=1 );;
+  }
+  button:nth-of-type(2) {
+    background: #ff5722;
+  }
+  button span {
+    display: block;
+    width:100px;
+    margin: -10px auto;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  button:hover span {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  
+  .reg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-100%) scale(1);
+    transform: translateY(-100%) scale(1);
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: #673ab7;
+    z-index: 5;
+    -webkit-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+  }
+  
+  .sig {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateY(-100%) scale(1);
+    transform: translateY(-100%) scale(1);
+    display: block;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: #ff5722;
+    z-index: 5;
+    -webkit-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+  }
+  
+  
+  

@@ -2,12 +2,13 @@ import React, {Component} from "react";
 import Slider from "react-slick";
 import Styled from 'styled-components';
 import HomePageInfo from "./HomePageInfo";
+import HomePagePonente from "./HomePagePonente";
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "red", right: 25+"px" }}
+        style={{ ...style, display: "block", color: "#17407F", right: 25+"px" }}
         onClick={onClick}
       />
     );
@@ -18,7 +19,7 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "green" }}
+        style={{ ...style, display: "block", color: "#17407F", left: 25+"px" }}
         onClick={onClick}
       />
     );
@@ -46,7 +47,7 @@ export default class SimpleSlider extends Component {
         <Wrapper>
             <Slider {...settings} >
                 <Page><HomePageInfo/></Page>
-                <Page><HomePageInfo/></Page>
+                <Page><HomePagePonente/></Page>
                
             </Slider>
       </Wrapper>

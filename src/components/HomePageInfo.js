@@ -27,10 +27,7 @@ Es muy importante entender el nuevo esquema de tributación para las personas na
 Finalmente se tratarán los temas integrados con respecto a algunos cambios en el impuesto a las ventas, impuesto al consumo, retención en la fuente normalización tributaria, dividendos gravados y procedimiento tributario con relación a las normas anti-evasión, beneficios tributarios especiales y nuevo régimen para compañías Holding colombiana y obras por impuestos, amnistías tributarias, beneficio de auditoria. .</p>
                             </div>
 
-                            <footer className="entry-footer">
-                                <a href="/" className="btn gradient-bg">Read More</a>
-                                <a href="/" className="btn dark">Register Now</a>
-                            </footer>
+                            
                         </div>
                     </div>
                 </div>
