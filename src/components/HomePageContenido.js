@@ -48,7 +48,10 @@ export default class HomePageContenido extends Component{
                                     <figure className="imghvr-shutter-out-diag-2"><img src={img3} alt=""/>
                                         <figcaption>
                                             <h3>Metodo de Tributación Simple para Personas Naturales y Sociedades</h3>
-                                            <p>Descripción del sistema - Condiciones para pertenecer a este método - Simulación comparativa para definir el perfil del contribuyente que le conviene el método - Reducción de riesgos tributarios.</p>
+                                            <ul><li>Descripción del sistema </li>
+                                                <li>Condiciones para pertenecer a este método - Simulación comparativa para definir el perfil del contribuyente que le conviene el método - Reducción de riesgos tributarios.
+                                                    </li>
+                                            </ul>
                                         </figcaption>
                                         <h3 className="title-contenido">Metodo de Tributación Simple para Personas Naturales y Sociedades</h3>
                                     </figure>
