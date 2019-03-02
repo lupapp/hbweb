@@ -3,13 +3,15 @@ import React, { Component } from 'react';
 export default class Countdown extends Component{
     constructor(){
         super();
+        let t = this.getRemaintime('Fri Mar 14 2019 24:00:00 GMT-0500');
         this.state={
-            time:'',
-            seconds:'',
-            minutes:'',
-            hours:'',
-            days:''
+            time:t.time,
+            seconds:t.seconds,
+            minutes:t.minutes,
+            hours:t.hours,
+            days:t.days
         };
+        this.getCountdown('Fri Mar 14 2019 24:00:00 GMT-0500');
     }
     
     getRemaintime = deadline =>{
@@ -27,11 +29,9 @@ export default class Countdown extends Component{
             days
         }
     }
-    
-   
-    render(){
+    getCountdown=deadline=>{
         setInterval(()=>{
-            let t = this.getRemaintime('Fri Mar 14 2019 24:00:00 GMT-0500');
+            let t = this.getRemaintime(deadline);
             this.setState({
                 time:t.time,
                 seconds:t.seconds,
@@ -42,29 +42,33 @@ export default class Countdown extends Component{
             if(t.time<=1){
                 clearInterval();
             }
-           
+        
         }, 1000)
+    }
+    render(){
         return(
-            
-            <div  className="countdown flex align-items-center" id="countdown">
+            <div  className="countdown flex align-items-center shadow-text" id="countdown">
+                <div className="countdown-holder flex align-items-baseline">
+                    <label>Faltan para el evento:</label> 
+                </div>
                 <div className="countdown-holder flex align-items-baseline">
                     <span className="dday">{this.state.days}</span>
-                    <label>Days</label>
+                    <label> Días</label>
                 </div>
 
                 <div className="countdown-holder flex align-items-baseline">
                     <span className="dhour" id="dhour">{this.state.hours}</span>
-                    <label>Hours</label>
+                    <label> Horas</label>
                 </div>
 
                 <div className="countdown-holder flex align-items-baseline">
                     <span className="dmin" id="dmin">{this.state.minutes}</span>
-                    <label>Minutes</label>
+                    <label> Minutos</label>
                 </div>
 
                 <div className="countdown-holder flex align-items-baseline">
                     <span className="dsec" id="dsec">{this.state.seconds}</span>
-                    <label>Seconds</label>
+                    <label> Segundos</label>
                 </div>
             </div>
             
