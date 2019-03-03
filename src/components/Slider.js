@@ -19,7 +19,11 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
+<<<<<<< HEAD
+        style={{ ...style, display: "block", background: "green", left: 25+"px" }}
+=======
         style={{ ...style, display: "block", color: "#17407F", left: 25+"px" }}
+>>>>>>> b3dfa07b385f965288237df2570753958dfac42a
         onClick={onClick}
       />
     );

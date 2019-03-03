@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../assets/images/iconexperto.png';
+import logo from '../assets/images/icon.png';
 
 export default class HomePagePonente extends Component{
     render(){

@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import icon from '../assets/images/incon.png';
+import next1 from '../assets/images/next1.jpg';
+import next2 from '../assets/images/next2.jpg';
+import next3 from '../assets/images/next3.jpg';
+
 export default class HomePonente extends Component{
     render(){
         return(
@@ -6,81 +11,82 @@ export default class HomePonente extends Component{
                 <div className="container">
                     <div className="row">
                         <div className="next-events-section-header">
-                            <h2 className="entry-title">Our next events</h2>
-                            <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et, scelerisque sit amet metus. Duis vel semper turpis, ac tempus libero. Maecenas id ultrices risus. Aenean nec ornare ipsum, lacinia.</p>
+                            <h2 className="entry-title">Experto</h2>
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="col-12 col-sm-6 col-md-4">
                             <div className="next-event-wrap">
-                                <figure>
-                                    <a href="#"><img src="images/next1.jpg" alt="1"/></a>
-
-                                    <div className="event-rating">8.9</div>
-                                </figure>
+                               
 
                                 <header className="entry-header">
-                                    <h3 className="entry-title">U2 Concert in Detroitt</h3>
+                                    
+                                    <figure>
+                                        <a href="#"><img src={next1} alt="1"/></a>
 
-                                    <div className="posted-date">Saturday <span>Jan 27, 2018</span></div>
+                                    </figure>
+                                    <h3 className="entry-title">Hector Barrera López</h3>
+                                    <div className="posted-date">
+                                        
+                                    </div>
                                 </header>
 
                                 <div className="entry-content">
-                                    <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus.</p>
+                                    <ul className="listaExperto">
+                                        <li>Contador Público Universidad Javeriana especializado en derecho tributario de la Universidad ICESI.</li>
+                                        <li>Asistente durante 30 años a las jornadas colombianas  de derecho tributario.</li>
+                                    </ul>
                                 </div>
 
-                                <footer className="entry-footer">
-                                    <a href="#">Buy Tikets</a>
-                                </footer>
+                               
                             </div>
                         </div>
 
                         <div className="col-12 col-sm-6 col-md-4">
                             <div className="next-event-wrap">
                                 <figure>
-                                    <a href="#"><img src="images/next1.jpg" alt="1"/></a>
+                                    <a href="#"><img src={next2} alt="1"/></a>
 
-                                    <div className="event-rating">7.9</div>
                                 </figure>
 
                                 <header className="entry-header">
-                                    <h3 className="entry-title">TED Talk California</h3>
+                                    <h3 className="entry-title">Experiencia</h3>
 
-                                    <div className="posted-date">Saturday <span>Jan 27, 2018</span></div>
                                 </header>
 
                                 <div className="entry-content">
-                                    <p>Eget lacus at mauris sagittis varius. Etiam ut ven enatis dui. Nullam tellus risus, pellentesque.</p>
+                                    <ul className="listaExperto">
+                                        <li>Director del departamento de impuestos corporativo del grupo fanalca (1991-2015).</li>
+                                        <li>Asesor tributario de importantes compañias como: Fanalca SA, Compañía de Negocio CGM SAS, Alimentos Tony SA,  Agregados y Mezclas Cachibi SA, Blanco y Negro SA, Blanco y Negro Masivo SA, Protecnica Ingenieria SA, Fabricea SA, Constructora Limonar SA, Noti 5 SA, Promotora Limonar SA, Rubio Constructores SA, Calitex SA, Diseño y Moda SA, Burica SA, Constructora Normandia SA, Zona Franca Palmaseca, Laskin, Celco SA.</li>
+                                    </ul>
                                 </div>
 
-                                <footer className="entry-footer">
-                                    <a href="#">Buy Tikets</a>
-                                </footer>
+                                
                             </div>
                         </div>
 
                         <div className="col-12 col-sm-6 col-md-4">
                             <div className="next-event-wrap">
                                 <figure>
-                                    <a href="#"><img src="images/next1.jpg" alt="1"/></a>
+                                    <a href="#"><img src={next3} alt="1"/></a>
 
-                                    <div className="event-rating">9.9</div>
                                 </figure>
 
                                 <header className="entry-header">
-                                    <h3 className="entry-title">Ultra Music Miami</h3>
-
-                                    <div className="posted-date">Saturday <span>Jan 27, 2018</span></div>
+                                    
+                                    <h3 className="entry-title">Docencia</h3>
                                 </header>
 
                                 <div className="entry-content">
-                                    <p>Lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facili.</p>
+                                    <ul className="listaExperto">
+                                        <li>Catedrático de la Universidad Javeriana - 5 años.</li> 
+                                        <li>Capacitación continua personal del grupo Fanalca SA.</li>
+                                        <li>Grupo de Contadores y Área Tributaria. </li>
+                                    </ul>
                                 </div>
 
-                                <footer className="entry-footer">
-                                    <a href="#">Buy Tikets</a>
-                                </footer>
+                               
                             </div>
                         </div>
                     </div>

@@ -5,11 +5,14 @@ import './assets/css/imagehover.css';
 import Countdown from './components/Countdown';
 import HomePageContenido from './components/HomePageContenido';
 import HomePageInfo from './components/HomePageInfo';
+import HomePonente from './components/HomePonente';
 //import Styled from 'styled-components';
 import Header from './components/HeaderHome';
 import FooterHome from './components/FooterHome';
 import FormInscripcion from './components/forms/FormInscripcion';
 import imgh from './assets/images/imgHeader.png'
+import HomePartners from './components/HomePartners';
+import NewsletterSubscribe from './components/NewsletterSubscribe';
 
 /*const AppWrapper =Styled.div`
     display:flex;
@@ -57,6 +60,9 @@ class App extends Component {
         <HomePageInfo/>
         
         <HomePageContenido></HomePageContenido>
+        <HomePonente></HomePonente>
+        <HomePartners></HomePartners>
+        <NewsletterSubscribe></NewsletterSubscribe>
         <FooterHome></FooterHome>
 
       </div>

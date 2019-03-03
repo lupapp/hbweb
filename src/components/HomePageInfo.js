@@ -18,13 +18,13 @@ export default class HomePageInfo extends Component{
                                 <div className="title-2"><label>Esta capacitación y actualización se ha preparado con una metodología simple para todas las personas interesadas en conocer el esquema tributario colombiano y aquellos que estén en el medio contable y tributario.</label></div>
                                 <p>
 
-Es importante antes de tratar los temas de la ley de financiamiento conocer algunas normas básicas de carácter general para la comprensión integral de los temas de la reforma. 
+Es importante antes de tratar los temas de la ley de financiamiento conocer algunas normas básicas de carácter general para la comprensión integral de los temas de la reforma. <br/>
 
-Esta última reforma contiene cambios de mucho impacto para las personas naturales, situación que se refleja en el aumento de la base gravable y la tarifa del impuesto de renta; además del impuesto al patrimonio que se estableció con los años 2019, 2020 y 2021.
+Esta última reforma contiene cambios de mucho impacto para las personas naturales, situación que se refleja en el aumento de la base gravable y la tarifa del impuesto de renta; además del impuesto al patrimonio que se estableció con los años 2019, 2020 y 2021.<br/>
 
-Es muy importante entender el nuevo esquema de tributación para las personas naturales y sociedades, denominado “Régimen simple de tributación” el cual es opcional. Para el efecto es importante hacer las simulaciones comparativas previas para decidir si se acoge a este sistema que puede ser más beneficioso que el sistema ordinario.
+Es muy importante entender el nuevo esquema de tributación para las personas naturales y sociedades, denominado “Régimen simple de tributación” el cual es opcional. Para el efecto es importante hacer las simulaciones comparativas previas para decidir si se acoge a este sistema que puede ser más beneficioso que el sistema ordinario.<br/>
 
-Finalmente se tratarán los temas integrados con respecto a algunos cambios en el impuesto a las ventas, impuesto al consumo, retención en la fuente normalización tributaria, dividendos gravados y procedimiento tributario con relación a las normas anti-evasión, beneficios tributarios especiales y nuevo régimen para compañías Holding colombiana y obras por impuestos, amnistías tributarias, beneficio de auditoria. .</p>
+Finalmente se tratarán los temas integrados con respecto a algunos cambios en el impuesto a las ventas, impuesto al consumo, retención en la fuente normalización tributaria, dividendos gravados y procedimiento tributario con relación a las normas anti-evasión, beneficios tributarios especiales y nuevo régimen para compañías Holding colombiana y obras por impuestos, amnistías tributarias, beneficio de auditoria. </p>
                             </div>
 
                             

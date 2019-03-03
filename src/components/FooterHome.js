@@ -1,8 +1,12 @@
 
 import React, {Component} from 'react';
-import logo from '../assets/images/logo.jpg'
-const year =document.write(new Date().getFullYear());
+import logoFooter from '../assets/images/logoFooter.png'
+
 export default class FooterHome extends Component{
+    getYear(){
+        let year = new Date().getFullYear();
+        return year;
+    }
     render(){
         return(
             <footer className="site-footer">
@@ -10,20 +14,12 @@ export default class FooterHome extends Component{
                     <div className="row">
                         <div className="col-12">
                             <figure className="footer-logo">
-                                <a href="/"><img src={logo} alt=""/></a>
+                                <a href="/"><img src={logoFooter} alt=""/></a>
                             </figure>
-                            <nav className="footer-navigation">
-                                <ul className="flex flex-wrap justify-content-center align-items-center">
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="/">About us</a></li>
-                                    <li><a href="/">Events</a></li>
-                                    <li><a href="/">News</a></li>
-                                    <li><a href="/">Contact</a></li>
-                                </ul>
-                            </nav>
+                            
 
                         
-            Copyright &copy;{year} All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" >Colorlib</a>
+            Copyright &copy; {this.getYear()} todos los derechos reservados | by <i className="fa fa-heart-o" aria-hidden="true"></i> <a href="https://www.lupaweb.com" target="_blank">Lupa</a>
 
                             <div className="footer-social">
                                 <ul className="flex flex-wrap justify-content-center align-items-center">

@@ -47,7 +47,7 @@ export default class Countdown extends Component{
     }
     render(){
         return(
-            <div  className="countdown flex align-items-center" id="countdown">
+            <div  className="countdown flex align-items-center shadow-text" id="countdown">
                 <div className="countdown-holder flex align-items-baseline">
                     <label>Faltan para el evento:</label> 
                 </div>
