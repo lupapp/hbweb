@@ -19,14 +19,6 @@ export default class HomePartners extends Component{
                                         <a href="#"><img src={lupa} alt=""/></a>
                                     </div>
 
-                                    <div className="event-partner-logo">
-                                        <a href="#"><img src={alacena} alt=""/></a>
-                                    </div>
-
-                                    <div className="event-partner-logo">
-                                        <a href="#"><img src={dulcemargarita} alt=""/></a>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
