@@ -61,7 +61,7 @@ export default class Forminscripcion extends Component{
                     <input type="text" className="inputFormin" name="documento"placeholder="Documento" onChange={this.onChange.bind(this)}/>
                     <select  className="inputFormin" name="tipod" placeholder="Tipo de documento" onChange={this.onChange.bind(this)}>
                         <option value="CC">CC</option>
-                        <option value="Extrangería">Extrangería</option>
+                        <option value="Extrangería">Extranjería</option>
                         <option valuer="Pasaporte">Pasaporte</option>
                     </select>
                     <input type="text" className="inputFormin" name="email" placeholder="Correo electrónico" onChange={this.onChange.bind(this)}/>
