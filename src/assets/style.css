@@ -343,7 +343,7 @@ a:hover, a:active {
     font-weight: bold;
     color: #17407F ;
     line-height: 26px;
-    padding:15px;
+    padding-top:15px;
 }
 .title-1{
     font-size: 40px;
@@ -1111,7 +1111,7 @@ a:hover, a:active {
     background-size: cover;
     text-align: center;
 }
-
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 .newsletter-subscribe .entry-title {
     font-size: 36px;
     font-weight: bold;
@@ -2385,12 +2385,33 @@ ul.tabs-nav .tab-nav.active {
     transition: .5s;
     cursor:pointer;
   }
+  .button {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin-top: -10px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-radius:5px;
+    cursor:pointer;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(23, 71, 148,1)), color-stop(100%, rgba(123, 191, 215,1)));
+    background: -webkit-linear-gradient(180deg, rgb(64, 176, 218) 0%, rgba(23, 71, 148,1) 100%);
+    background: -webkit-linear-gradient(right, rgba(64, 176, 218,1) 0%, rgba(23, 71, 148,1) 100%);
+    background: linear-gradient(270deg, rgba(64, 176, 218,1) 0%, rgba(23, 71, 148,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#581479', endColorstr='#ab00e5',GradientType=1 );
+  }
   button:nth-of-type(1) {
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(23, 71, 148,1)), color-stop(100%, rgba(123, 191, 215,1)));
     background: -webkit-linear-gradient(180deg, rgb(64, 176, 218) 0%, rgba(23, 71, 148,1) 100%);
     background: -webkit-linear-gradient(right, rgba(64, 176, 218,1) 0%, rgba(23, 71, 148,1) 100%);
     background: linear-gradient(270deg, rgba(64, 176, 218,1) 0%, rgba(23, 71, 148,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#581479', endColorstr='#ab00e5',GradientType=1 );;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#581479', endColorstr='#ab00e5',GradientType=1 );
   }
   button:nth-of-type(2) {
     background: #ff5722;

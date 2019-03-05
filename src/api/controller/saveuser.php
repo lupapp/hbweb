@@ -10,7 +10,6 @@ $documento=$_POST['documento'];
 $tipod=$_POST['tipod'];
 $mail=$_POST['mail'];
 $celular=$_POST['celular'];
-$array =()
 $user->setNombre($nombre);
 $user->setTelefono($documento);
 $user->setCiudad($tipod);

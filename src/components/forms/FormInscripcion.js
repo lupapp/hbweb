@@ -33,8 +33,8 @@ export default class Forminscripcion extends Component{
             [e.target.name]:e.target.value
         })
     }
-    /*onSubmit(){
-        fetch(`http://hectorbarreralopez.com/api/`, {
+    onSubmit(e){
+        fetch(`localhost:3000/api/controller/saveuser.php/${this.state.name}`, {
             method: 'POST'
           })
           .then(res => res.json())
@@ -43,7 +43,7 @@ export default class Forminscripcion extends Component{
               alert('Se ha Inscrito');
             }
           });
-    }*/
+    }
     handleSubmit = (e) => {
         e.preventDefault();
         console.log('enviado');
@@ -55,7 +55,7 @@ export default class Forminscripcion extends Component{
         return(
             <div className="cont">
                 <h2 className="title-2">Quiero Asistir</h2>
-                <form action="./api/controller/inscripcionEmail.php" method="_POST">
+                <form action={this.onSubmit.bind(this)} method="_POST">
                     <input type="hidden" name="curso" value="1"/>
                     <input type="text" className="inputFormin" name="nombre" placeholder="Nombre completo" onChange={this.onChange.bind(this)} />
                     <input type="text" className="inputFormin" name="documento"placeholder="Documento" onChange={this.onChange.bind(this)}/>
