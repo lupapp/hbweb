@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 //import Menu from './Menu';
-import logo from '../assets/images/logo.jpg'
+import logo from '../assets/images/logo.jpg';
+import portafolio from '../assets/images/portafolio.pdf';
 export default class HeaderHome extends Component{
     render(){
         return(
@@ -19,7 +20,9 @@ export default class HeaderHome extends Component{
                       </div>
 
                       <div className="col-lg-3 d-none d-lg-block order-2 order-lg-3">
-                         
+                      <footer class="entry-footer">
+                        <a href={portafolio} class="btn gradient-bg" target="_blank">Descargar Portafolio</a>
+                    </footer>
                       </div>
                   </div>
               </div>

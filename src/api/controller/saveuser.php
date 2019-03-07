@@ -16,8 +16,8 @@ $user->setCiudad($tipod);
 $user->setMail($mail);
 $user->setMovil($celular);
 $user->save();
-$_SESSION['ins']=
 header('Location: procesar-pedido.php');
+?>
 
 
 

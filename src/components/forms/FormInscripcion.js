@@ -55,7 +55,7 @@ export default class Forminscripcion extends Component{
         return(
             <div className="cont">
                 <h2 className="title-2">Quiero Asistir</h2>
-                <form action={this.onSubmit.bind(this)} method="_POST">
+                <form action="./api/controller/inscripcionEmail.php" method="_POST">
                     <input type="hidden" name="curso" value="1"/>
                     <input type="text" className="inputFormin" name="nombre" placeholder="Nombre completo" onChange={this.onChange.bind(this)} />
                     <input type="text" className="inputFormin" name="documento"placeholder="Documento" onChange={this.onChange.bind(this)}/>
@@ -67,7 +67,7 @@ export default class Forminscripcion extends Component{
                     <input type="text" className="inputFormin" name="email" placeholder="Correo electrónico" onChange={this.onChange.bind(this)}/>
                     <input type="text" className="inputFormin" name="celular" placeholder="Celular" onChange={this.onChange.bind(this)}/>
                     <div className="form-check">
-                        <input className="form-check-input inputCheboxin" name="terminos" type="checkbox" value="accet" onChange={this.onChange.bind(this)} />
+                        <input className="form-check-input inputCheboxin" checked name="terminos" type="checkbox" value="accet" onChange={this.onChange.bind(this)} />
                         <label className="form-check-label labelCheckbox" htmlFor="defaultCheck1">
                             Terminos y condiciones <span className="linkVer">Ver</span>
                         </label>

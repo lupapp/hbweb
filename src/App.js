@@ -9,7 +9,7 @@ import HomePonente from './components/HomePonente';
 //import Styled from 'styled-components';
 import Header from './components/HeaderHome';
 import FooterHome from './components/FooterHome';
-import FormInscripcion from './components/forms/FormInscripcion';
+import FormInscripcion from './components/forms/FormInscripcion2';
 import imgh from './assets/images/imgHeader.png'
 import HomePartners from './components/HomePartners';
 import NewsletterSubscribe from './components/NewsletterSubscribe';
