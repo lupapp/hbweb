@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Facturacion from './Facturacion';
+import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 export default class Forminscripcion2 extends Component{
     constructor(args){
         super(args);
@@ -63,9 +64,8 @@ export default class Forminscripcion2 extends Component{
                     <div className="row">
                         <div className="col-md-12">
                                 <p className="parrafo-info pl-3 pr-3 ">Llene los datos de facturación si necesita que la factura salga a nombre de otra persona o empresa.</p>
-                                <a className="btn btn-info" href="/" >Llenar datos de facturación</a>
+                                <Link to="/datos-facturacion" className="btn btn-info">Llenar datos de facturación</Link>
                         </div>
-                        <Facturacion></Facturacion>
                         <div className="col-md-12">
                             <div className="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" checked name="terminos"  id="inlineCheckbox1" value="accet" onChange={this.onChange.bind(this)}/>
@@ -79,10 +79,6 @@ export default class Forminscripcion2 extends Component{
                         <span>Inscribirme</span>
                     </button>
                 </form>
-                
-                
-                
-               
                 <div className="reg"></div>
                 <div className="sig"></div>
             </div>
